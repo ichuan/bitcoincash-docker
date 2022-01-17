@@ -1,5 +1,5 @@
 # bitcoincash-docker
-Dockerfile for bitcoincash, using [Bitcoin Unlimited](https://www.bitcoinunlimited.info/) node.
+Dockerfile for bitcoincash, using [Bitcoin Cash Node](https://bitcoincashnode.org/).
 
 
 # Building
@@ -21,5 +21,5 @@ docker run --rm -itd --name bch -p 8332:8332 -v `pwd`/data:/opt/coin/data -v `pw
 # Using pre-built docker image
 
 ```bash
-docker run --rm -itd --name bch -p 8332:8332 -v `pwd`/data:/opt/coin/data -v `pwd`/coin.conf:/opt/coin/coin.conf mixhq/bitcoincash
+docker run --rm -itd --name bch -p 8332:8332 -v `pwd`/data:/opt/coin/data -v `pwd`/coin.conf:/opt/coin/coin.conf wshub/bitcoincash
 ```
